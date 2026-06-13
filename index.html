@@ -14,6 +14,88 @@
 
   <link rel="stylesheet" href="https://jiahuiyu.com/resources/style.css">
   <link rel="shortcut icon" href="bju-logo.png" type="image/x-icon">
+  <style>
+    .resume-sections {
+      clear: both;
+      padding-top: 1rem;
+    }
+
+    .resume-section {
+      display: grid;
+      grid-template-columns: 8.5rem minmax(0, 1fr);
+      column-gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-section-title {
+      margin: 0;
+      padding-top: 0.15rem;
+      font-size: 1rem;
+      font-variant: small-caps;
+      font-weight: normal;
+    }
+
+    .resume-entry {
+      margin-bottom: 1rem;
+    }
+
+    .resume-entry:last-child,
+    .project-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .resume-entry-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.15rem;
+      font-weight: bold;
+    }
+
+    .resume-date {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .resume-section ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 1.5rem;
+    }
+
+    .resume-section li {
+      margin-bottom: 0.1rem;
+    }
+
+    .project-group {
+      margin-bottom: 0.35rem;
+    }
+
+    .project-group-title {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 650px) {
+      .resume-section {
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+      }
+
+      .resume-section-title {
+        font-weight: bold;
+      }
+
+      .resume-entry-header {
+        display: block;
+      }
+
+      .resume-date {
+        display: block;
+        margin-top: 0.1rem;
+      }
+    }
+  </style>
 </head>
 
 
@@ -21,34 +103,34 @@
 
   <div class="wrap">
 
-    <div class="container content" id="mainContainer" style="max-width:35rem;margin-top:3rem;">
+    <div class="container content" id="mainContainer" style="max-width:58rem;margin-top:3rem;">
       <div style="display:inline;overflow:auto;">
         <p class="responsive-paragraph">
-          <img id="img" src="david-26.jpeg"
+          <img id="img" src="david26.jpeg"
             style="width:30%; max-width:45rem; aspect-ratio:1/1; object-fit:cover; border-radius:50%; margin:0rem 2rem 0rem 0rem;"
             align="left"></img>
           <br>
           David Geddam
           <br>
           <script language="JavaScript">
-            var username = "dgeddam";
-            var hostname = "bju.edu";
+            var username = "davidspurgeongeddam";
+            var hostname = "gmail.com";
             document.write(username + "@" + hostname);
           </script>
         </p>
         <p class="responsive-paragraph">
-          Student Software Developer, BJU<br>
+          Software Developer, BJU<br>
         </p>
         <p class="responsive-paragraph">
           <a href="https://www.linkedin.com/in/david-geddam/">LinkedIn</a>
           <!-- <a href="https://github.com/JiahuiYu">GitHub</a> &nbsp/&nbsp-->
-          <br>
+          <!-- <br>
           <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=2&user=t7-0w9cAAAAJ">Google
-            Scholar</a>
+            Scholar</a> -->
           <br>
           <a href="https://github.com/dave21-py">GitHub</a>
           <br>
-          <a href="main-7.pdf">CV</a>
+          <a href="resume-26.pdf">CV</a>
         </p>
       </div>
 
@@ -56,85 +138,162 @@
       <div style='float:left;'>
         <br>
         <p align="justify">
-          Currently studying about ai safety.
+          My research interests lie at the field of AGI Preparedness. Am also a christian who is deeply passionate about the ethics of AI and its impact on faith and society.
         </p>
       </div>
 
 
-      <div class="posts" style='float:left;'>
-
+      <div class="resume-sections">
         <hr>
-        <div class="post" style="font-size:100%;">
-          <h1 class="post-title">
-            Selected Projects
-          </h1>
 
+        <section class="resume-section" aria-labelledby="experiences-heading">
+          <h1 class="resume-section-title" id="experiences-heading">Experiences</h1>
+          <div>
+            <article class="resume-entry">
+              <div class="resume-entry-header">
+                <span>Bob Jones University - Software Developer</span>
+                <span class="resume-date">Feb. 2026 &ndash; Present</span>
+              </div>
+              <ul>
+                <li>Writing code and maintaining Django web applications for over two thousand students</li>
+              </ul>
+            </article>
 
-          <p><a href="https://github.com/dave21-py/Siri-project">Tiny Siri - Edge-Optimized Intent
-              Classification</a><br />
-            Built a voice intent classifier by fine-tuning DistilBERT with a custom data augmentation pipeline,
-            achieving 97
-            percent test accuracy and deploying it via Hugging Face Spaces and Streamlit. Optimized the model for
-            on-device
-            deployment using PyTorch dynamic quantization, reducing memory footprint by 48 percent (255MB →132MB)
-            while maintaining full precision.</p>
+            <article class="resume-entry">
+              <div class="resume-entry-header">
+                <span>Lovable, USA - Campus Leader</span>
+                <span class="resume-date">Jan. 2026 &ndash; Present</span>
+              </div>
+              <ul>
+                <li>Part of the first-ever Lovable campus leader cohort</li>
+              </ul>
+            </article>
 
-          <p><a href="https://github.com/dave21-py/Alzheimers-Transformer">Medical diagnosis with Hybrid Vision
-              Transformers</a><br />
-            Built a deep learning pipeline using a hybrid MobileNetV2 + Transformer architecture with self-attention
-            mechanisms to classify brain dementia types and lung cancer malignancies, achieving 98 percent and 95
-            percent test
-            accuracy respectively. Also used the Transformer's spatial feature processing to identify localized
-            malignant
-            patterns, with Grad-CAM heatmaps providing explainability.</p>
+            <article class="resume-entry">
+              <div class="resume-entry-header">
+                <span>Research Assistant</span>
+                <span class="resume-date">Dec. 2025 &ndash; Present</span>
+              </div>
+              <ul>
+                <li>Predictive deep learning models for accelerating material research</li>
+                <li>Supervisor: Sumanth Kandavalli (NYU Tandon School of Engineering)</li>
+              </ul>
+            </article>
 
-          <p><a href="https://github.com/dave21-py/Adversarial-vision-hack">Adversarial Vision Attacks</a><br />This
-            project demonstrates the fragility of modern Deep Learning Computer Vision systems (specifically ResNet-50)
-            against Adversarial Attacks. By exploiting the gradients of the model, I successfully "poisoned" images that
-            look
-            identical to humans but are completely misclassified by the AI.</p>
-
-
-
-          <div class="post" style="font-size:100%;">
-            <h1 class="post-title">
-              Research Projects
-            </h1>
-
-            <p>Fault Prediction in Wind Turbines via Joint-Embedding
-              Predictive Architecture<br />
-              <font size="+1" color="#777777">Author: <font color="#000000">Geddam, D.</font><br />
-                <a href="">Work Accepted IEEE Southeast Michigan 2026</a> / <a href="">Code(Under Development)</a>
-            </p>
-
+            <article class="resume-entry">
+              <div class="resume-entry-header">
+                <span>Bob Jones University - Teaching Assistant</span>
+                <span class="resume-date">July 2025 &ndash; Aug. 2025</span>
+              </div>
+              <ul>
+                <li>Mentored high-school students in teaching about Arduino principles and programming.</li>
+                <li>Supervisor: Dr. Timothy Anglea</li>
+              </ul>
+            </article>
           </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="projects-heading">
+          <h1 class="resume-section-title" id="projects-heading">Projects</h1>
+          <div>
+            <div class="project-group">
+              <p class="project-group-title">AI for science and automated research, towards AGI</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Causality and scientific explanation</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">AI safety, control, scheming, and monitorability</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
 
 
+            <div class="project-group">
+              <p class="project-group-title">ML systems & LLM Inference</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
 
-          <hr>
-          <div class="post" style="font-size:100%;">
-            <h1 class="post-title">
-              Experience
-            </h1>
-            <ul>
-              <li>Student Software Developer (02/26-present): <font size="+1" color="#777777">Building and maintaining
-                  web applications.<br /></font>
-              </li>
-              <li>Research Assistant (12/25-present): <font size="+1" color="#777777">Supervisor: Sumanth Ratna.
-                  Kandavalli,<br />
-                  (ratna@nyu.edu)</font>
-              </li>
-              <li>Campus Leader (01/26-present): <font size="+1" color="#777777">Representing Lovable as part of a
-                  campus program by organizing
-                  events, building community, and creating initiatives to educate and inspire.</font>
-              </li>
-            </ul>
+            <div class="project-group">
+              <p class="project-group-title">Robotics & embodied intelligence</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
 
+            <div class="project-group">
+              <p class="project-group-title">Reinforcement learning and agency</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
 
+            <div class="project-group">
+              <p class="project-group-title">Language, LLMs, pre-training and post-training dangers</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Vision & Physical Perception</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Deep learning</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Planning & Decision Theory</p>
+              <ul>
+                <li><a href="#">coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Probabilistic Machine Learning</p>
+              <ul>
+                <li><a href="https://github.com/dave21-py/ml_from_scratch">Implementation of ML algorithms from scratch (in progress)</a></li>
+                <li><a href="#">more coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Algorithms &amp; Math</p>
+              <ul>
+                <li><a href="main-6.pdf">A brief overview of Laguerre's method for finding roots in polynomials</a></li>
+                <li><a href="presentation.pdf">A brief overview of Multi-dimensional Runge-Kutta stability</a></li>
+                <li><a href="#">more coming soon</a></li>
+              </ul>
+            </div>
+
+            <div class="project-group">
+              <p class="project-group-title">Misc.</p>
+              <ul>
+                <li><a href="persuasion.pdf">Perspective of AI in college</a></li>
+                <li><a href="https://github.com/dave21-py/Adversarial-vision-hack">Implementation of fast-gradient sign method exposing hidden flaws in computer vision</a></li>
+                <li><a href="document.pdf">Lead for electronics team, stratospheric weather balloon payload and tracking system</a></li>
+              </ul>
+            </div>
           </div>
-
-        </div>
-
+        </section>
       </div>
     </div>
 
